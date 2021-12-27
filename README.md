@@ -1,2 +1,2 @@
 # ebert-haunt
-Changes the byline of the modern articles on rogerebert.com to "Roger Ebert's Ghost"
+Changes the byline of the modern reviews on rogerebert.com to "Roger Ebert's Ghost"
