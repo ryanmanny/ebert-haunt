@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["*://www.rogerebert.com/reviews/*"],
-      "js": ["roger.js"]
+      "js": ["review.js"]
     }
   ]
 }
