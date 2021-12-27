@@ -11,12 +11,16 @@
 
   "content_scripts": [
     {
-      "matches": ["*://www.rogerebert.com/reviews/*"],
-      "js": ["review.js"]
-    },
-    {
       "matches": ["*://www.rogerebert.com/"],
       "js": ["homepage.js"]
+    },
+    {
+      "matches": ["*://www.rogerebert.com/reviews"],
+      "js": ["reviews-list.js"]
+    },
+    {
+      "matches": ["*://www.rogerebert.com/reviews/*"],
+      "js": ["review.js"]
     }
   ]
 }
