@@ -5,3 +5,4 @@ Changes the byline of the modern reviews on rogerebert.com to "Roger Ebert's Gho
 * Chrome port
 * Create a better icon
 * Find byline locations I missed (write a script to crawl for them?)
+* Test cases
