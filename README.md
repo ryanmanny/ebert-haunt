@@ -6,7 +6,10 @@ Changes the byline of the modern reviews on [rogerebert.com](https://www.rogereb
 * Chrome (Coming soon)
 
 ## TODO
-* Replace the star icon
+* Better extension icon
 * Find byline locations I missed
-  * Maybe write a crawling script
 * Test cases
+  * Selenium tests against the actual site
+
+## NOT TODO
+* Articles which do not use the star rating system (e.g. the Blog, TV Reviews)
