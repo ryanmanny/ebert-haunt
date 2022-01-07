@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Ebert Haunt",
-  "version": "1.1",
+  "version": "1.2",
 
   "description": "Changes the byline of the modern reviews on rogerebert.com to Roger Ebert's Ghost",
 
