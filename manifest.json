@@ -6,7 +6,8 @@
   "description": "Changes the byline of the modern reviews on rogerebert.com to Roger Ebert's Ghost",
 
   "icons": {
-    "48": "icons/star-48.png"
+    "48": "icons/star-48.png",
+    "96": "icons/star-96.png"
   },
 
   "content_scripts": [
