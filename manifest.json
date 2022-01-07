@@ -18,7 +18,10 @@
       ]
     },
     {
-      "matches": ["*://www.rogerebert.com/reviews"],
+      "matches": [
+        "*://www.rogerebert.com/reviews",
+        "*://www.rogerebert.com/collections/*"
+      ],
       "js": ["scripts/reviews-list.js"]
     },
     {
