@@ -10,6 +10,8 @@ Changes the byline of the modern reviews on [rogerebert.com](https://www.rogereb
 * Find byline locations I missed
 * Test cases
   * Selenium tests against the actual site
+* Automated build script
+* Pipeline publish
 
 ## NOT TODO
 * Articles which do not use the star rating system (e.g. the Blog, TV Reviews)
