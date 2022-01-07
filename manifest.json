@@ -26,6 +26,10 @@
       "js": ["scripts/reviews-list.js"]
     },
     {
+      "matches": ["*://www.rogerebert.com/collections"],
+      "js": ["scripts/collections-list.js"]
+    },
+    {
       "matches": ["*://www.rogerebert.com/reviews/*"],
       "js": ["scripts/review.js"]
     }
