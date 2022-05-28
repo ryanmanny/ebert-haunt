@@ -1,0 +1,12 @@
+{
+  "name": "ebert-haunt",
+  "version": "1.2.0",
+  "description": "Roger Ebert Lives Again!",
+  "repository": "https://github.com/ryanmanny/ebert-haunt.git",
+  "author": "Ryan Manny <ryan.w.manny@gmail.com>",
+  "license": "gpl-3.0",
+  "private": true,
+  "devDependencies": {
+    "@changesets/cli": "^2.22.0"
+  }
+}
