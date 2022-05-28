@@ -1,0 +1,49 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Setup Jsonnet
+        uses: zendesk/setup-jsonnet@v10
+
+      - name: Yarn Install
+        run: yarn install --frozen-lockfile
+
+      - name: Bump Version
+        id: version
+        run: |
+          yarn changeset version
+          VERSION=$(cat package.json | jq -r .version)
+          echo "::set-output name=version::$VERSION"
+
+      - name: Commit Updated Files
+        run: |
+          git add package.json
+          git add CHANGELOG.md
+          git add .changeset
+          git status
+        # git commit -m "Update CHANGELOG.md"
+        # git push
+
+      - name: Generate Manifest
+        run: |
+          jsonnet \
+            -A browser=chrome \
+            -A version=${{ steps.version.outputs.version }} \
+            manifest.jsonnet > manifest.json
+
+      - name: Check Manifest
+        run: cat manifest.json
