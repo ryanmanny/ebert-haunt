@@ -1,5 +1,5 @@
 # ebert-haunt
-Changes the byline of the modern reviews on [rogerebert.com](https://www.rogerebert.com) to "Roger Ebert's Ghost"
+Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) with improved bylines
 
 ## Download
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ebert-haunt/)
