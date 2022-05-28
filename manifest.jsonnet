@@ -15,13 +15,13 @@ local content_script(paths, scripts) =
   };
 
 
-function(browser) {
+function(browser, version) {
   local manifestVersion =
     if std.asciiLower(browser) == 'chrome' then 3 else 2,
 
   'manifest_version': manifestVersion,
   'name': "Ebert Haunt",
-  'version': '1.2',
+  'version': version,
   'description': "Roger Ebert Lives Again!",
   'icons': {
     [size]: icon(size)
