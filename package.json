@@ -6,7 +6,12 @@
   "author": "Ryan Manny <ryan.w.manny@gmail.com>",
   "license": "gpl-3.0",
   "private": true,
+  "scripts": {
+    "prettier": "prettier --write \"**/*.{js,md}\"",
+    "version": "yarn changeset version && yarn prettier"
+  },
   "devDependencies": {
-    "@changesets/cli": "^2.22.0"
+    "@changesets/cli": "^2.22.0",
+    "prettier": "^2.6.2"
   }
 }
