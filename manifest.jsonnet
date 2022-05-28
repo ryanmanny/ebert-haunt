@@ -1,3 +1,11 @@
+local icon(size) =
+  local iconsDir = 'icons/';
+  local iconFileType = '.png';
+  local iconFilePrefix = 'star-';
+
+  iconsDir + iconFilePrefix + size + iconFileType;
+
+
 local content_script(paths, scripts) =
   local host = '*://www.rogerebert.com/';
   local scriptsDir = 'scripts/';
@@ -5,6 +13,7 @@ local content_script(paths, scripts) =
     'matches': [host + path for path in paths],
     'js': [scriptsDir + script for script in scripts],
   };
+
 
 function(browser) {
   local manifestVersion =
@@ -15,8 +24,8 @@ function(browser) {
   'version': '1.2',
   'description': "Roger Ebert Lives Again!",
   'icons': {
-    '48': 'icons/star-48.png',
-    '96': 'icons/star-96.png',
+    [size]: icon(size)
+    for size in ['48', '96', '128']
   },
   'content_scripts': [
     content_script(
