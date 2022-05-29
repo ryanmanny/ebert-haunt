@@ -5,8 +5,8 @@
 ### Minor Changes
 
 - Add Chrome support
-- Process homepage as reviews-list
-- Process collections as reviews-list
+- Process /homepage as reviews-list
+- Process /collections as reviews-list
 - Add more icons
 
 ## 1.1.0
