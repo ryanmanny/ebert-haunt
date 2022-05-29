@@ -7,11 +7,19 @@
   "license": "gpl-3.0",
   "private": true,
   "scripts": {
+    "build:all": "yarn build:chrome && yarn build:firefox",
+    "build:chrome": "./build.sh chrome build/chrome.zip",
+    "build:firefox": "./build.sh firefox build/firefox.xpi",
     "prettier": "prettier --write \"**/*.{js,md}\"",
-    "version": "yarn changeset version && yarn prettier"
+    "version:bump": "yarn changeset version && yarn prettier"
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "files": [
+    "icons",
+    "scripts",
+    "manifest.json"
+  ]
 }
