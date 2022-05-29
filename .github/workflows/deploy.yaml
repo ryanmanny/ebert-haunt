@@ -57,7 +57,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: ${{ needs.bump-version.outputs.version }}
+          ref: v${{ needs.bump-version.outputs.version }}
 
       - name: Setup Jsonnet
         uses: zendesk/setup-jsonnet@v10
