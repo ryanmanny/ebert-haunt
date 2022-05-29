@@ -26,12 +26,15 @@ jobs:
         run: |
           yarn run version:bump
           VERSION=$(cat package.json | jq -r .version)
-          CHANGED=$(git diff-index --quiet HEAD)
           echo "::set-output name=version::$VERSION"
-          echo "::set-output name=changed::$CHANGED"
+
+      - name: Check if Index Changed
+        id: changed
+        run: git diff-index --quiet HEAD
+        continue-on-error: true  # Fails if index changed
 
       - name: Commit Updated Files
-        if: steps.version.outputs.changed
+        if: steps.changed.outcome != 'success'
         run: |
           git add package.json CHANGELOG.md .changeset
           git commit -m "Bump to v${{ steps.version.outputs.version }}, update CHANGELOG.md"
@@ -47,7 +50,7 @@ jobs:
     needs: bump-version
     strategy:
       matrix:
-        browser: [firefox]
+        browser: ['firefox']
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -64,7 +67,7 @@ jobs:
 
       - name: Firefox Upload
         uses: trmcnvn/firefox-addon@v1
-        if: matrix.browser == firefox
+        if: matrix.browser == 'firefox'
         with:
           uuid: '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}'
           xpi: build/firefox.xpi
