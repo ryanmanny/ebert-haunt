@@ -69,7 +69,6 @@ jobs:
 
       - name: Firefox Upload
         uses: trmcnvn/firefox-addon@v1
-        if: matrix.browser == 'firefox'
         with:
           uuid: '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}'
           xpi: build/firefox.xpi
