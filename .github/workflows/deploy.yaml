@@ -48,7 +48,7 @@ jobs:
       - name: Tag Version
         run: |
           git tag -f v${{ steps.version.outputs.version }}
-          git push --tags
+          git push -f --tags
 
   deploy:
     runs-on: ubuntu-latest
