@@ -1,5 +1,18 @@
 # ebert-haunt
 
+## 1.3.0
+
+### Minor Changes
+
+- 5513a82: Convert to npm package for changeset support
+- 69d04bb: Add Deploy workflow
+- a9795d3: Add build scripts
+
+### Patch Changes
+
+- 192297a: Add prettier
+- fbf687c: Add CHANGELOG.md for legacy commits
+
 ## 1.2.0
 
 ### Minor Changes
