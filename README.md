@@ -13,7 +13,7 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 - Find byline locations I missed
 - Test cases
   - Selenium tests against the actual site
-- Pipeline publish
+- Publish to Chrome in Workflow
 
 ## NOT TODO
 

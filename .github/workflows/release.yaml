@@ -82,6 +82,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: v${{ needs.bump-version.outputs.version }}
+          tag_name: v${{ needs.bump-version.outputs.version }}
           body_path: CHANGELOG.md
           files: |
-            ${{ steps.web-ext-sign.outputs.target }}
+            build/firefox.xpi
+            build/chrome.zip
