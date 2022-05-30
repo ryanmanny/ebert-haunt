@@ -13,6 +13,7 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 
 - Better icon
 - Find more byline locations
+- Add screenshots to README
 
 ## Development Requirements
 
