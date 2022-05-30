@@ -11,11 +11,13 @@
     "build:chrome": "./build.sh chrome build/chrome.zip",
     "build:firefox": "./build.sh firefox build/firefox.xpi",
     "prettier": "prettier --write \"**/*.{js,md}\"",
+    "start:firefox": "web-ext run -s scripts -t firefox-desktop --start-url rogerebert.com",
     "version:bump": "yarn changeset version && yarn prettier"
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "web-ext": "^6.8.0"
   },
   "files": [
     "icons",
