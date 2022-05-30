@@ -18,4 +18,4 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 - Yarn
 - Jsonnet
 - Python (Testing)
-- Chromedriver (Testing)
+- ChromeDriver (Testing)
