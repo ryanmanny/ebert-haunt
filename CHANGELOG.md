@@ -1,5 +1,12 @@
 # ebert-haunt
 
+## 1.3.1
+
+### Patch Changes
+
+- 0222438: Add Test workflow
+- 6957ae9: Add functional tests with Selenium
+
 ## 1.3.0
 
 ### Minor Changes
