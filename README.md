@@ -4,16 +4,14 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 
 ## Download
 
+- [Chrome](https://chrome.google.com/webstore/detail/ebert-haunt/ippdcobhchkjhhlnllifcpedhfbodpbf) (Pending)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ebert-haunt/)
-- Chrome (Coming soon)
 
 ## TODO
 
 - Better extension icon
-- Find byline locations I missed
-- Test cases
-  - Selenium tests against the actual site
-- Publish to Chrome in Workflow
+- Look for more byline locations
+- Nightly Selenium tests
 
 ## NOT TODO
 

@@ -66,6 +66,15 @@ jobs:
         run: |
           mkdir -p build
           yarn run build:all
+      
+      - name: Upload Chrome Extension
+        uses: mnao305/chrome-extension-upload@2.2.0
+        continue-on-error: true
+        with:
+          file-path: dist/chrome.zip
+          extension-id: ippdcobhchkjhhlnllifcpedhfbodpbf
+          client-id: ${{ secrets.CHROME_CLIENT_ID }}
+          refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
 
       - name: Upload Firefox Extension
         uses: kewisch/action-web-ext@v1
