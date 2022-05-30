@@ -7,12 +7,16 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 - [Chrome](https://chrome.google.com/webstore/detail/ebert-haunt/ippdcobhchkjhhlnllifcpedhfbodpbf) (Pending)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ebert-haunt/)
 
-## TODO
+## Planned Features
 
-- Better extension icon
-- Look for more byline locations
+- Better icon
+- Find more byline locations
 - Nightly Selenium tests
 
-## NOT TODO
+## Development Requirements
 
-- Articles which do not use the star rating system (e.g. the Blog, TV Reviews)
+- Node
+- Yarn
+- Jsonnet
+- Python (Testing)
+- Chromedriver (Testing)
