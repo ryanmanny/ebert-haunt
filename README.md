@@ -1,5 +1,7 @@
 # ebert-haunt
 
+![Test Status](https://github.com/ryanmanny/ebert-haunt/actions/workflows/test.yaml/badge.svg)
+
 Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) with improved bylines
 
 ## Download
