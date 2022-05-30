@@ -1,4 +1,4 @@
-name: Deploy
+name: Release
 
 on:
   workflow_dispatch:
@@ -50,7 +50,7 @@ jobs:
           git tag -f v${{ steps.version.outputs.version }}
           git push -f --tags
 
-  deploy:
+  release:
     runs-on: ubuntu-latest
     needs: bump-version
     steps:
