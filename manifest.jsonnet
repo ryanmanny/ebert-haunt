@@ -23,6 +23,11 @@ function(browser, version) {
   'name': "Ebert Haunt",
   'version': version,
   'description': "Roger Ebert Lives Again!",
+  'browser_specific_settings': {
+    'gecko': {
+      'id': '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}',
+    }
+  },
   'icons': {
     [size]: icon(size)
     for size in ['48', '96', '128']
