@@ -34,10 +34,9 @@ jobs:
         uses: nanasess/setup-chromedriver@v1.0.7
 
       - name: Setup Display
-        run: |
-          export DISPLAY=:99
-          chromedriver --url-base=/wd/hub &
-          sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
+        run: sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 &
 
       - name: Test
         run: yarn test:functional
+        env:
+          DISPLAY: :99
