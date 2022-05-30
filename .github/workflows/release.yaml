@@ -35,8 +35,8 @@ jobs:
 
       - name: Check if Index Changed
         id: changed
-        run: git diff-index --quiet HEAD
         continue-on-error: true
+        run: git diff-index --quiet HEAD
 
       - name: Commit Updated Files
         if: steps.changed.outcome != 'success'
@@ -68,8 +68,8 @@ jobs:
           yarn run build:all
 
       - name: Upload Firefox Extension
-        id: web-ext-sign
         uses: kewisch/action-web-ext@v1
+        continue-on-error: true
         with:
           cmd: sign
           source: build/firefox.xpi
