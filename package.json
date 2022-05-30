@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "build:all": "yarn build:chrome && yarn build:firefox",
-    "build:chrome": "./build.sh chrome build/chrome.zip",
-    "build:firefox": "./build.sh firefox build/firefox.xpi",
+    "build:chrome": "build-scripts/build.sh chrome build/chrome.zip",
+    "build:firefox": "build-scripts/build.sh firefox build/firefox.xpi",
     "prettier": "prettier --write \"**/*.{js,md}\"",
     "start:firefox": "web-ext run -s scripts -t firefox-desktop --start-url rogerebert.com",
     "version:bump": "yarn changeset version && yarn prettier"
