@@ -36,7 +36,7 @@ jobs:
       - name: Check if Index Changed
         id: changed
         run: git diff-index --quiet HEAD
-        continue-on-error: true  # Fails if index changed
+        continue-on-error: true
 
       - name: Commit Updated Files
         if: steps.changed.outcome != 'success'
@@ -46,7 +46,7 @@ jobs:
           git push
 
       - name: Tag Version
-        run: |
+        run: |  # Overwrite if Tag exists
           git tag -f v${{ steps.version.outputs.version }}
           git push -f --tags
 
@@ -67,11 +67,21 @@ jobs:
           mkdir -p build
           yarn run build:all
 
-      - name: Firefox Upload
-        uses: trmcnvn/firefox-addon@v1
+      - name: Upload Firefox Extension
+        id: web-ext-sign
+        uses: kewisch/action-web-ext@v1
         with:
-          uuid: '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}'
-          xpi: build/firefox.xpi
-          manifest: manifest.json
-          api-key: ${{ secrets.FIREFOX_API_KEY }}
-          api-secret: ${{ secrets.FIREFOX_API_SECRET }}
+          cmd: sign
+          source: build/firefox.xpi
+          channel: listed
+          apiKey: ${{ secrets.FIREFOX_API_KEY }}
+          apiSecret: ${{ secrets.FIREFOX_API_SECRET }}
+          timeout: 900000
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: v${{ needs.bump-version.outputs.version }}
+          body_path: CHANGELOG.md
+          files: |
+            ${{ steps.web-ext-sign.outputs.target }}
