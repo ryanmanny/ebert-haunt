@@ -25,8 +25,8 @@ function(browser, version) {
   'description': "Roger Ebert Lives Again!",
   'browser_specific_settings': {
     'gecko': {
-      'id': '{7b312f5e-9680-436b-acc1-9b09f60e8aaa}',
-    }
+      'id': '{bba1913a-b22e-4ebe-bd47-0f14906dff91}',
+    },
   },
   'icons': {
     [size]: icon(size)
