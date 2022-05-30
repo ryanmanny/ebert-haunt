@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# Requirements:
+# - jsonnet
+#
 # Usage:
 #   build.sh [browser] [outfile]
 

@@ -72,7 +72,7 @@ jobs:
         continue-on-error: true
         with:
           cmd: sign
-          source: build/firefox.xpi
+          source: dist/firefox.xpi
           channel: listed
           apiKey: ${{ secrets.FIREFOX_API_KEY }}
           apiSecret: ${{ secrets.FIREFOX_API_SECRET }}
@@ -85,5 +85,5 @@ jobs:
           tag_name: v${{ needs.bump-version.outputs.version }}
           body_path: CHANGELOG.md
           files: |
-            build/firefox.xpi
-            build/chrome.zip
+            dist/firefox.xpi
+            dist/chrome.zip
