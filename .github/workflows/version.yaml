@@ -70,7 +70,7 @@ jobs:
 
       - name: Build
         run: |
-          mkdir -p build
+          mkdir -p dist
           yarn run build:all
 
       - name: Upload Chrome Extension
