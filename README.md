@@ -4,7 +4,7 @@
 
 Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) with improved bylines
 
-## Download
+## Install
 
 - [Chrome](https://chrome.google.com/webstore/detail/ebert-haunt/ippdcobhchkjhhlnllifcpedhfbodpbf)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ebert-haunt/)
