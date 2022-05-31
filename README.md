@@ -4,9 +4,9 @@
 
 Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) with improved bylines
 
-## Download
+## Install
 
-- [Chrome](https://chrome.google.com/webstore/detail/ebert-haunt/ippdcobhchkjhhlnllifcpedhfbodpbf) (Pending)
+- [Chrome](https://chrome.google.com/webstore/detail/ebert-haunt/ippdcobhchkjhhlnllifcpedhfbodpbf)
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ebert-haunt/)
 
 ## Planned Features
@@ -14,6 +14,7 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 - Better icon
 - Find more byline locations
 - Add screenshots to README
+- Use Javascript Selenium bindings, to remove Python dependency
 
 ## Development Requirements
 
