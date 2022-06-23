@@ -1,5 +1,11 @@
 # ebert-haunt
 
+## 1.3.3
+
+### Patch Changes
+
+- 2e032ea: New icon (courtesy of Natalie)
+
 ## 1.3.2
 
 ### Patch Changes
