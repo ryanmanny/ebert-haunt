@@ -1,7 +1,7 @@
 local icon(size) =
   local iconsDir = 'icons/';
   local iconFileType = '.png';
-  local iconFilePrefix = 'star-';
+  local iconFilePrefix = 'roger-';
 
   iconsDir + iconFilePrefix + size + iconFileType;
 
