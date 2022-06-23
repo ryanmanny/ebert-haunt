@@ -30,7 +30,7 @@ function(browser, version) {
   },
   'icons': {
     [size]: icon(size)
-    for size in ['48', '96', '128']
+    for size in ['16', '48', '128']
   },
   'content_scripts': [
     content_script(
