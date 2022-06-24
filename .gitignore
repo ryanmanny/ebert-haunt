@@ -265,3 +265,6 @@ cython_debug/
 # Custom
 screenshots/
 manifest.json
+
+# WSL2
+*:Zone.Identifier
