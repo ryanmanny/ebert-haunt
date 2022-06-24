@@ -11,7 +11,6 @@ Haunts the new reviews on [Roger Ebert's website](https://www.rogerebert.com) wi
 
 ## Planned Features
 
-- Better icon
 - Find more byline locations
 - Add screenshots to README
 - Use Javascript Selenium bindings, to remove Python dependency
